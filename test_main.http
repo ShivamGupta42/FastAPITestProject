@@ -1,0 +1,30 @@
+###Simple
+POST http://localhost:8000/posts
+Content-Type: application/json
+
+{"title": "test post"}
+
+
+### Pydantic
+POST http://localhost:8000/pydantic/posts
+Content-Type: application/json
+
+{"title": "pydantic post",
+  "content" :  "demo",
+  "published" :  false,
+  "rating" : "1"
+}
+
+
+###
+# Test your FastAPI endpoints
+
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/hello/User
+Accept: application/json
+
+###
